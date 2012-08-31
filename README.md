@@ -4,6 +4,8 @@
 
 Distributed under GNU GPL v3 or any higher version you may want.
 
+Written in python3, no additional modules in dependencies
+
 ## Installation
 
 Get fresh source:
@@ -67,3 +69,7 @@ Maximum 'day' specified in config , starts from 1.
     
     ${color ffb966}${execi 1800 /data/Projects/github/wwop/wwop.py -d 4 dof}: ${color 82ffab}${execi 1800 /data/Projects/github/wwop/wwop.py -d 4 maxtemp}$color..${color b3ecff}${execi 1800 /data/Projects/github/wwop/wwop.py -d 4 mintemp} 
     ${alignr}$color(${execi 1800 /data/Projects/github/wwop/wwop.py -d 4 cond})    
+
+## Translation
+
+You can translate wwop into your language! Look in 'translations' directory, there is an example already :-)
