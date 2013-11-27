@@ -33,7 +33,7 @@ def download_data():
     CITY = config["main"]["CITY"]
     DAYS = config["forecast"]["DAYS"]
     
-    data = urler.urlopen("http://free.worldweatheronline.com/feed/weather.ashx?q={0}&format=json&num_of_days={1}&key={2}".format(CITY, DAYS, API_KEY)).read().decode('utf-8')
+    data = urler.urlopen("http://api.worldweatheronline.com/free/v1/weather.ashx?q={0}&fx=yes&cc=yes&format=json&num_of_days={1}&key={2}".format(CITY, DAYS, API_KEY)).read().decode('utf-8')
     data = json.loads(data)
     f = open(os.path.expanduser("~/.config/wwop/cache"), "w")
     f.write(json.dumps(data))
